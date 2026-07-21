@@ -22,7 +22,7 @@ Tus fondos nunca salen de Binance. AutoP2P solo modifica el precio de tus anunci
 
 ### Ver en accion
 
-[![AutoP2P Demo](https://img.youtube.com/vi/kxr2LGELYdA/maxresdefault.jpg)](https://youtu.be/kxr2LGELYdA)
+[![AutoP2P — Bot P2P Binance: dashboard con repricing automatico en vivo](assets/autop2p-dashboard-hero.png)](https://youtu.be/kxr2LGELYdA)
 
 ---
 
