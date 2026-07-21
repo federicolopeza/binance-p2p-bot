@@ -202,6 +202,14 @@ No necesitas VPS, servidor propio, ni conocimientos tecnicos avanzados.
 
 ---
 
+## Proximamente: AutoP2P v2
+
+Estamos construyendo **AutoP2P v2**, la proxima generacion del bot P2P para Binance: mas control, mas transparencia en cada decision de precio, y soporte para operaciones de mayor escala. Actualmente en beta privada con un grupo reducido de traders.
+
+¿Queres enterarte cuando abra? Escribinos por [WhatsApp](https://wa.me/59893349147) y te avisamos.
+
+---
+
 ## Empezar Gratis
 
 AutoP2P ofrece **7 dias de prueba gratuita** sin compromiso y sin tarjeta de credito.
@@ -269,6 +277,6 @@ Bot P2P para Binance disponible en toda Latinoamerica:
 
 <sub>
 
-**Tags:** `binance p2p bot` `p2p trading bot` `binance c2c bot` `bot trading p2p` `automated p2p trading` `binance p2p automation` `bot de precios binance` `p2p repricing bot` `cryptocurrency p2p bot` `trading automatico binance` `bot binance p2p español` `autop2p` `auto p2p` `bot p2p argentina` `bot p2p uruguay` `bot p2p brasil` `bot p2p colombia` `bot p2p mexico` `bot p2p peru` `bot p2p bolivia` `bot p2p chile` `bot p2p venezuela` `binance p2p price bot` `bot para binance p2p` `automatizar binance p2p` `binance p2p automatico` `p2p crypto bot` `binance trading bot` `bot de trading p2p latinoamerica` `binance peer to peer bot` `p2p bot binance español` `binance p2p repricing` `binance p2p ars` `binance p2p cop` `binance p2p pen` `binance p2p bob`
+**Tags:** `binance p2p bot` `p2p trading bot` `binance c2c bot` `bot trading p2p` `automated p2p trading` `binance p2p automation` `bot de precios binance` `p2p repricing bot` `cryptocurrency p2p bot` `trading automatico binance` `bot binance p2p español` `autop2p` `auto p2p` `autop2p v2` `bot p2p argentina` `bot p2p uruguay` `bot p2p brasil` `bot p2p colombia` `bot p2p mexico` `bot p2p peru` `bot p2p bolivia` `bot p2p chile` `bot p2p venezuela` `binance p2p price bot` `bot para binance p2p` `automatizar binance p2p` `binance p2p automatico` `p2p crypto bot` `binance trading bot` `bot de trading p2p latinoamerica` `binance peer to peer bot` `p2p bot binance español` `binance p2p repricing` `binance p2p ars` `binance p2p cop` `binance p2p pen` `binance p2p bob`
 
 </sub>
