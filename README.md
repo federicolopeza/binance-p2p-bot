@@ -10,37 +10,6 @@ AutoP2P analiza el order book de Binance P2P en tiempo real y ajusta el precio d
 
 ---
 
-## 🚀 Nuevo: AutoP2P v2 — Operaciones deterministas para Binance P2P
-
-> **"Tu criterio, a velocidad de máquina."** Ya está abierta la nueva generación de AutoP2P: [**v2.autop2p.dev**](https://v2.autop2p.dev)
-
-AutoP2P v2 convierte un snapshot del mercado Binance P2P en una **decisión explicable**: filtros deterministas, estrategia, guardrails y un recibo de auditoría por cada operación. Sin IA de caja negra: reglas que vos definís, ejecutadas con precisión de máquina.
-
-**Qué trae v2:**
-
-- **Decisiones auditables** — cada operación queda registrada con su razonamiento completo
-- **Cadena determinista de filtros** — el order book se evalúa en etapas secuenciales y explicables
-- **Estrategias TOP1, FOLLOW y UNIFIED** — rangos, ticks y parámetros anti-persecución configurables por anuncio
-- **Monitoreo event-driven del mercado** — reacciona a cambios reales, con menos llamadas a la API
-- **Modo DRY-RUN** — probá tu configuración contra el mercado real antes de tocar producción
-- **Multi-cuenta** — operá 1, 3, 9 o más cuentas Binance desde una sola plataforma
-- **Seguridad primero** — sin custodia de fondos, API keys sin permisos de retiro, credenciales encriptadas
-
-**Mercados soportados en v2:** ARS (Argentina), COP (Colombia), PEN (Perú), BOB (Bolivia) — y creciendo.
-
-| Plan | Cuentas Binance | Precio |
-|------|-----------------|--------|
-| **Starter** | 1 | 100 USDT/mes — trial gratis de 5 días |
-| **Operador** | 3 | 200 USDT/mes |
-| **Pro** | 9 | 400 USDT/mes |
-| **Enterprise** | A medida | A negociar |
-
-### [Crear cuenta gratis en v2 →](https://v2.autop2p.dev)
-
-Más info: [Producto](https://v2.autop2p.dev/producto) · [Estrategias](https://v2.autop2p.dev/estrategias) · [Precios](https://v2.autop2p.dev/precios) · [Seguridad y control](https://v2.autop2p.dev/seguridad-y-control) · [Changelog](https://v2.autop2p.dev/changelog) · Soporte: [soporte@autop2p.dev](mailto:soporte@autop2p.dev) · [Telegram](https://t.me/autop2p)
-
----
-
 ## Como Funciona
 
 ```
@@ -280,11 +249,6 @@ Si. Cancela desde tu dashboard sin penalidades. Durante el trial no se realiza n
 No. AutoP2P corre en la nube. Solo necesitas un navegador para configurar y monitorear.
 </details>
 
-<details>
-<summary><strong>¿Que es AutoP2P v2 y en que se diferencia?</strong></summary>
-AutoP2P v2 es la nueva generacion de la plataforma: operaciones deterministas con recibo de auditoria por cada decision, estrategias TOP1 / FOLLOW / UNIFIED, monitoreo event-driven del mercado, modo DRY-RUN para probar sin riesgo, y soporte multi-cuenta (1, 3, 9 o mas cuentas Binance). Disponible en <a href="https://v2.autop2p.dev">v2.autop2p.dev</a> con trial gratis de 5 dias.
-</details>
-
 ---
 
 ## AutoP2P en tu pais
@@ -298,16 +262,13 @@ Bot P2P para Binance disponible en toda Latinoamerica:
 ## Contacto y Soporte
 
 - **Web** — [autop2p.dev](https://autop2p.dev)
-- **AutoP2P v2** — [v2.autop2p.dev](https://v2.autop2p.dev)
 - **WhatsApp** — [+598 93 349 147](https://wa.me/59893349147)
-- **Email** — [soporte@autop2p.dev](mailto:soporte@autop2p.dev)
-- **Telegram** — [t.me/autop2p](https://t.me/autop2p)
 - **Documentacion** — [autop2p.dev/docs](https://autop2p.dev/docs)
 
 ---
 
 <sub>
 
-**Tags:** `binance p2p bot` `p2p trading bot` `binance c2c bot` `bot trading p2p` `automated p2p trading` `binance p2p automation` `bot de precios binance` `p2p repricing bot` `cryptocurrency p2p bot` `trading automatico binance` `bot binance p2p español` `autop2p` `auto p2p` `autop2p v2` `bot p2p argentina` `bot p2p uruguay` `bot p2p brasil` `bot p2p colombia` `bot p2p mexico` `bot p2p peru` `bot p2p bolivia` `bot p2p chile` `bot p2p venezuela` `binance p2p price bot` `bot para binance p2p` `automatizar binance p2p` `binance p2p automatico` `p2p crypto bot` `binance trading bot` `bot de trading p2p latinoamerica` `binance peer to peer bot` `p2p bot binance español` `binance p2p repricing` `operaciones deterministas binance p2p` `bot p2p multi cuenta` `binance p2p ars` `binance p2p cop` `binance p2p pen` `binance p2p bob`
+**Tags:** `binance p2p bot` `p2p trading bot` `binance c2c bot` `bot trading p2p` `automated p2p trading` `binance p2p automation` `bot de precios binance` `p2p repricing bot` `cryptocurrency p2p bot` `trading automatico binance` `bot binance p2p español` `autop2p` `auto p2p` `bot p2p argentina` `bot p2p uruguay` `bot p2p brasil` `bot p2p colombia` `bot p2p mexico` `bot p2p peru` `bot p2p bolivia` `bot p2p chile` `bot p2p venezuela` `binance p2p price bot` `bot para binance p2p` `automatizar binance p2p` `binance p2p automatico` `p2p crypto bot` `binance trading bot` `bot de trading p2p latinoamerica` `binance peer to peer bot` `p2p bot binance español` `binance p2p repricing` `binance p2p ars` `binance p2p cop` `binance p2p pen` `binance p2p bob`
 
 </sub>
