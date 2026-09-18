@@ -47,10 +47,18 @@ La nueva portada puede servir de base para una vista previa social; la selecció
 
 ## Verificación
 
-- Los 25 destinos HTTP únicos de los README (sin parámetros UTM y excluyendo WhatsApp) respondieron 200 durante la revisión.
+- Los 64 destinos HTTP únicos de los README (sin parámetros UTM, incluidos thumbnails y excluidos YouTube y WhatsApp) respondieron 200 durante la revisión. Los dos videos de YouTube se verificaron por oEmbed: títulos y canal Auto P2P disponibles.
 - Enlaces relativos e imágenes verificados contra los archivos locales.
 - Una sola cabecera H1 por README y alternativas textuales para las imágenes.
 - `git diff --check` sin errores.
 - Inspección visual de la portada: texto correcto y legible, sin métricas ficticias ni dashboard inventado.
 
 No hay runtime ni suite de aplicación en este repositorio. La validación es editorial, de archivos y de enlaces; no constituye evidencia de un aumento de tráfico o conversiones.
+
+## Ampliación internacional y video
+
+Se añadieron los dos videos indicados por el propietario, con enlaces directos y miniaturas en el README principal. Sus títulos y autor se comprobaron con oEmbed de YouTube; no se afirma haber auditado su contenido audiovisual. Los README en inglés y portugués enlazan las mismas piezas e indican el idioma de sus títulos originales.
+
+El directorio organiza guías por tareas: aprender, configurar, revisar seguridad, explorar funciones y comparar herramientas. La navegación internacional enlaza las cinco versiones reales del sitio (es, en, pt, ru, zh); los recursos regionales corresponden a páginas existentes.
+
+No se agregan ciudades sin páginas propias, enlaces ocultos, keywords repetidas ni reseñas inventadas. Referencia: [políticas de spam de Google](https://developers.google.com/search/docs/essentials/spam-policies). Los enlaces ayudan a descubrir recursos; su cantidad no acredita una mejora de ranking ni transferencia de autoridad desde GitHub.

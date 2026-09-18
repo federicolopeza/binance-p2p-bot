@@ -12,6 +12,19 @@ AutoP2P v2 es una plataforma web para operadores de **Binance P2P / C2C**: confi
 
 > Este es el repositorio público de presentación y recursos de AutoP2P. No contiene el código del servicio ni un bot descargable. Para usar la plataforma, consultá las condiciones de acceso vigentes en el sitio oficial.
 
+## AutoP2P en video
+
+### ¿Todavía movés tus anuncios a mano?
+
+Dos videos del canal Auto P2P para conocer la propuesta antes de explorar la plataforma:
+
+| Video en YouTube | YouTube Short |
+| --- | --- |
+| [![Ver el video de AutoP2P: ¿Todavía movés tus anuncios a mano?](https://i.ytimg.com/vi/KBHbSFvrbcM/hqdefault.jpg)](https://www.youtube.com/watch?v=KBHbSFvrbcM) | [![Ver el Short de AutoP2P: ¿Todavía movés tus anuncios a mano?](https://i.ytimg.com/vi/PD-fe_z6Q7U/hq2.jpg)](https://www.youtube.com/shorts/PD-fe_z6Q7U) |
+| [Ver «AutoP2P P2P automatizado»](https://www.youtube.com/watch?v=KBHbSFvrbcM) | [Ver la presentación en formato Short](https://www.youtube.com/shorts/PD-fe_z6Q7U) |
+
+[Explorá las funciones actuales de AutoP2P](https://autop2p.dev/producto/). La interfaz y las condiciones del servicio pueden evolucionar después de la publicación de un video.
+
 ## Automatizá el precio de tus anuncios con tus reglas
 
 Mantener anuncios competitivos exige revisar el libro, seleccionar referencias y respetar un rango. AutoP2P reúne esa configuración y el seguimiento de la operación en una herramienta web.
@@ -90,17 +103,60 @@ No. AutoP2P es un producto independiente y no está afiliado a Binance. Binance 
 
 ## Guías para automatizar Binance P2P
 
-- [Bot P2P para Binance: cómo elegir una herramienta](https://autop2p.dev/bot-p2p-binance/)
-- [Automatizar Binance P2P](https://autop2p.dev/automatizar-binance-p2p/)
-- [Usar un bot P2P sin VPS](https://autop2p.dev/bot-p2p-sin-vps/)
-- [Glosario de la operación P2P](https://autop2p.dev/glosario/)
-- [Novedades del producto](https://autop2p.dev/changelog/)
+Elegí un recorrido según lo que necesitás resolver. Las guías amplían los conceptos; las páginas de funciones explican cómo se aplican al producto.
 
-### Recursos por mercado
+### Empezar y configurar
 
-[Argentina](https://autop2p.dev/bot-p2p-argentina/) · [Colombia](https://autop2p.dev/bot-p2p-colombia/) · [Venezuela](https://autop2p.dev/bot-p2p-venezuela/) · [Brasil](https://autop2p.dev/bot-p2p-brasil/)
+| Tu pregunta | Recurso |
+| --- | --- |
+| ¿Qué hace un bot de precios P2P? | [Cómo funciona un bot P2P para Binance](https://autop2p.dev/blog/como-funciona-bot-p2p-binance/) |
+| ¿Cómo preparo mi configuración? | [Guía para configurar un bot P2P](https://autop2p.dev/blog/como-configurar-bot-p2p/) |
+| ¿Qué puedo automatizar? | [Automatización de Binance P2P](https://autop2p.dev/automatizar-binance-p2p/) |
+| ¿Qué debo revisar antes de conectar una API? | [Seguridad al usar un bot P2P](https://autop2p.dev/blog/es-seguro-usar-bot-p2p-binance/) |
+| ¿Qué significan los términos del motor? | [Glosario P2P: estrategias, libro y repricing](https://autop2p.dev/glosario/) |
+| ¿Dónde encuentro instrucciones de uso? | [Documentación de AutoP2P](https://autop2p.dev/docs/) |
 
-La disponibilidad de pares y medios de pago depende de tu cuenta y del mercado en Binance.
+### Profundizar en las funciones
+
+- [Repricing automático](https://autop2p.dev/features/repricing-automatico/): ajustes de precio según la configuración del anuncio.
+- [Filtros del order book](https://autop2p.dev/features/filtros-order-book/): criterios para seleccionar las referencias del mercado.
+- [Estrategia unificada](https://autop2p.dev/features/estrategia-unificada/): configuración de las rutas de competencia.
+- [Gestión multi-anuncio](https://autop2p.dev/features/multi-anuncio/): organización de varios anuncios desde el dashboard.
+- [Horarios del motor](https://autop2p.dev/features/scheduler/): ventanas de operación configurables.
+- [Chats integrados](https://autop2p.dev/features/chats-integrados/): conversaciones con las contrapartes en el flujo de órdenes.
+- [Métricas de operación](https://autop2p.dev/features/metricas/): seguimiento de la actividad del motor.
+- [Seguridad de la API](https://autop2p.dev/features/seguridad-api/): permisos y manejo de credenciales.
+
+### Comparar opciones antes de elegir
+
+Si estás evaluando herramientas, empezá por la [guía de bots P2P para Binance](https://autop2p.dev/bot-p2p-binance/) y el [centro de comparativas](https://autop2p.dev/comparativa/). También podés consultar la operación [sin VPS propio](https://autop2p.dev/bot-p2p-sin-vps/) o las diferencias entre un [dashboard web y un bot de Telegram](https://autop2p.dev/bot-p2p-telegram/).
+
+Para seguir la evolución del servicio: [blog de AutoP2P](https://autop2p.dev/blog/) y [novedades del producto](https://autop2p.dev/changelog/).
+
+## AutoP2P por mercado e idioma
+
+### Recursos para Latinoamérica
+
+| Mercado | Guía local |
+| --- | --- |
+| Argentina | [Bot P2P para Binance en Argentina](https://autop2p.dev/bot-p2p-argentina/) |
+| Colombia | [Bot P2P para Binance en Colombia](https://autop2p.dev/bot-p2p-colombia/) |
+| Venezuela | [Bot P2P para Binance en Venezuela](https://autop2p.dev/bot-p2p-venezuela/) |
+| Brasil | [Bot P2P para Binance no Brasil](https://autop2p.dev/pt/bot-p2p-brasil/) |
+
+La disponibilidad de pares y medios de pago depende de tu cuenta y del mercado en Binance. Estas páginas ofrecen contexto local; no implican disponibilidad universal del servicio.
+
+### Explore AutoP2P in your language
+
+El sitio ofrece recorridos en cinco idiomas, con páginas de producto y estrategias localizadas:
+
+| Idioma / Language | Sitio / Website | Producto / Product | Estrategias / Strategies |
+| --- | --- | --- | --- |
+| Español | [AutoP2P en español](https://autop2p.dev/) | [Producto](https://autop2p.dev/producto/) | [Estrategias](https://autop2p.dev/estrategias/) |
+| English | [Binance P2P automation](https://autop2p.dev/en/) | [Product](https://autop2p.dev/en/producto/) | [Strategies](https://autop2p.dev/en/estrategias/) |
+| Português | [Automação P2P Binance](https://autop2p.dev/pt/) | [Produto](https://autop2p.dev/pt/producto/) | [Estratégias](https://autop2p.dev/pt/estrategias/) |
+| Русский | [Автоматизация Binance P2P](https://autop2p.dev/ru/) | [Продукт](https://autop2p.dev/ru/producto/) | [Стратегии](https://autop2p.dev/ru/estrategias/) |
+| 中文 | [Binance P2P 自动化](https://autop2p.dev/zh/) | [产品](https://autop2p.dev/zh/producto/) | [策略](https://autop2p.dev/zh/estrategias/) |
 
 ## Conocé AutoP2P
 
