@@ -1,0 +1,9 @@
+Use case: ads-marketing
+Asset type: wide GitHub README hero and social campaign image for AutoP2P v2, landscape 16:9.
+Primary request: premium Spanish-language brand campaign for a cloud Binance P2P repricing tool, with operator control and explainable decisions.
+Scene/backdrop: pale mineral white architectural salt-flat landscape, subtle horizon and a sculptural translucent cobalt-blue loop passing through three precision-machined frosted glass gates. The gates represent filtering, rules and a decision receipt, abstract not literal software screens.
+Style/medium: polished editorial 3D product illustration, restrained fintech art direction, realistic frosted glass, soft shadows, beautifully typeset text, generous whitespace.
+Composition/framing: text on left, sculptural loop and gates on right, all text comfortably inset from edges, readable as a small GitHub preview.
+Color palette: mineral off-white #f4f6f8, ink #16181c, cobalt #2558c7, subtle blue #6f9cff.
+Text (verbatim): "AutoP2P" small brand at top left; "Tu estrategia." then "Cada decisión, visible." as the main large headline; "Bot P2P para Binance" as supporting line; "autop2p.dev" small at bottom left.
+Constraints: conceptual campaign artwork, no fabricated dashboard, no Binance logo, no coins, no profit chart, no performance claims, no guaranteed ranking, no additional words, no watermark. Typography precise contemporary sans-serif.

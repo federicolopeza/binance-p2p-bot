@@ -1,0 +1,14 @@
+{
+  "description": "AutoP2P v2: bot P2P para Binance con repricing automático, reglas por anuncio y decisiones explicables. Dashboard en la nube, sin VPS ni custodia.",
+  "homepage": "https://autop2p.dev/",
+  "topics": [
+    "autop2p",
+    "binance-p2p",
+    "binance-c2c",
+    "p2p-bot",
+    "repricing",
+    "p2p-trading",
+    "trading-automation",
+    "saas"
+  ]
+}

@@ -1,282 +1,167 @@
-# AutoP2P — Bot Automatico de Precios para Binance P2P
+# AutoP2P — Bot P2P para Binance con repricing automático
 
-### Repricing inteligente para tus anuncios en Binance C2C. 24/7. Desde la nube.
+**Tu estrategia. Cada decisión, visible.**
 
-AutoP2P analiza el order book de Binance P2P en tiempo real y ajusta el precio de tus anuncios automaticamente para que siempre estes en la mejor posicion — sin estar pegado a la pantalla, sin VPS, sin instalaciones.
+AutoP2P v2 es una plataforma web para operadores de **Binance P2P / C2C**: configurás cómo competir, definís límites de precio y revisás el motivo de cada decisión. Gestioná anuncios, órdenes y chat desde un mismo dashboard, sin instalar un bot ni administrar un VPS.
 
-> **Estas perdiendo ordenes mientras no miras la pantalla.** Cada minuto que tu precio queda desactualizado, un competidor te supera y se lleva la orden. AutoP2P resuelve eso.
+[![AutoP2P: Tu estrategia. Cada decisión, visible. Ilustración conceptual en blanco mineral y azul cobalto.](assets/autop2p-v2-hero.png)](https://autop2p.dev/?utm_source=github&utm_medium=repository&utm_campaign=binance-p2p-bot&utm_content=hero)
 
-### [Probar 7 dias gratis](https://autop2p.dev) &nbsp;&middot;&nbsp; [Ver demo](https://youtu.be/kxr2LGELYdA) &nbsp;&middot;&nbsp; [Documentacion](https://autop2p.dev/docs) &nbsp;&middot;&nbsp; [WhatsApp](https://wa.me/59893349147)
+**[Conocer AutoP2P →](https://autop2p.dev/?utm_source=github&utm_medium=repository&utm_campaign=binance-p2p-bot&utm_content=readme_cta)** · [Ver estrategias](https://autop2p.dev/estrategias/) · [Consultar planes y acceso](https://autop2p.dev/precios/) · [Ingresar](https://app.autop2p.dev/login)
 
----
+[English](README.en.md) · [Português](README.pt-BR.md)
 
-## Como Funciona
+> Este es el repositorio público de presentación y recursos de AutoP2P. No contiene el código del servicio ni un bot descargable. Para usar la plataforma, consultá las condiciones de acceso vigentes en el sitio oficial.
 
-```
-1. Conecta      →  Ingresa tu API key de Binance (solo permisos P2P, sin retiros)
-2. Configura    →  Elegí estrategia, filtros y limites de precio
-3. Activa       →  El motor ajusta tus precios en menos de 1 segundo
-```
+## AutoP2P en video
 
-Tus fondos nunca salen de Binance. AutoP2P solo modifica el precio de tus anuncios.
+### ¿Todavía movés tus anuncios a mano?
 
-### Ver en accion
+Dos videos del canal Auto P2P para conocer la propuesta antes de explorar la plataforma:
 
-[![AutoP2P — Bot P2P Binance: dashboard con repricing automatico en vivo](assets/autop2p-dashboard-hero.png)](https://youtu.be/kxr2LGELYdA)
+| Video en YouTube | YouTube Short |
+| --- | --- |
+| [![Ver el video de AutoP2P: ¿Todavía movés tus anuncios a mano?](https://i.ytimg.com/vi/KBHbSFvrbcM/hqdefault.jpg)](https://www.youtube.com/watch?v=KBHbSFvrbcM) | [![Ver el Short de AutoP2P: ¿Todavía movés tus anuncios a mano?](https://i.ytimg.com/vi/PD-fe_z6Q7U/hq2.jpg)](https://www.youtube.com/shorts/PD-fe_z6Q7U) |
+| [Ver «AutoP2P P2P automatizado»](https://www.youtube.com/watch?v=KBHbSFvrbcM) | [Ver la presentación en formato Short](https://www.youtube.com/shorts/PD-fe_z6Q7U) |
 
----
+[Explorá las funciones actuales de AutoP2P](https://autop2p.dev/producto/). La interfaz y las condiciones del servicio pueden evolucionar después de la publicación de un video.
 
-## Estrategias de Repricing
+## Automatizá el precio de tus anuncios con tus reglas
 
-AutoP2P ofrece un motor de estrategia unificado con 3 modos de operacion:
+Mantener anuncios competitivos exige revisar el libro, seleccionar referencias y respetar un rango. AutoP2P reúne esa configuración y el seguimiento de la operación en una herramienta web.
 
-| Modo | Que hace | Ideal para |
-|------|----------|------------|
-| **TOP-1** | Supera automaticamente al primer competidor del order book | Mercados con alta competencia |
-| **FOLLOW** | Sigue o iguala el precio de un competidor especifico por nickname | Competidores conocidos |
-| **HOLD** | Mantiene tu precio dentro de un rango fijo que vos definis | Control total de rentabilidad |
+| Lo que necesitás | Cómo lo abordás con AutoP2P v2 |
+| --- | --- |
+| Ajustar precios sin repetir cambios manuales | Repricing por anuncio según estrategia, filtros y límites. |
+| Comparar competidores relevantes | Filtros por medios de pago, volumen, límites de orden y otros criterios configurables. |
+| Entender por qué cambió un precio | Un registro de decisión con el motivo de actualizar o mantener. |
+| Gestionar varios anuncios | Configuración por anuncio y seguimiento desde el dashboard. |
+| Trabajar desde el navegador | Anuncios, órdenes y chat en una plataforma en la nube. |
+| Conservar el control operativo | Vos definís las reglas y decidís cuándo iniciar o pausar el motor. |
 
-Cada modo se ejecuta a traves de un **pipeline de 12 fases** que incluye:
+## Cómo funciona el bot P2P
 
-1. Normalizacion de configuracion
-2. Filtrado del order book (5 filtros secuenciales)
-3. Analisis de competencia
-4. Seleccion del target (por posicion o nickname)
-5. Configuracion por competidor
-6. Optimizacion de margen cuando sos TOP-1
-7. Calculo de precio (Beat o Match)
-8. Clamping a limites min/max
-9. Proteccion anti-ratchet
-10. Evaluacion de deadband
-11. Decision de update
-12. Actualizacion de estado
+1. **Conectá tu cuenta.** Seguí el proceso de la plataforma para configurar una API key con los permisos P2P requeridos, sin habilitar retiros.
+2. **Definí tus reglas.** Elegí estrategia, competidores, rango de precio y horarios. Revisá la configuración antes de activar.
+3. **Iniciá y supervisá.** El motor evalúa el mercado según tus reglas; podés consultar las decisiones y pausar la operación desde el dashboard.
 
----
+La disponibilidad de una acción depende de los permisos de tu cuenta, la configuración y las condiciones de Binance. Calcular un precio candidato no significa que el cambio ya se haya aplicado.
 
-## Filtros Inteligentes del Order Book
+## Estrategias de repricing: TOP1, FOLLOW y UNIFIED
 
-Antes de calcular el precio, AutoP2P filtra a los competidores irrelevantes:
+| Estrategia | Comportamiento |
+| --- | --- |
+| **TOP1** | Calcula un precio frente a la competencia elegible, respetando la configuración del anuncio. |
+| **FOLLOW** | Sigue la referencia de un competidor seleccionado por nickname. |
+| **UNIFIED** | Selecciona la ruta TOP1 o FOLLOW según el modo de objetivo y los nicknames configurados. |
 
-| Filtro | Que hace |
-|--------|----------|
-| **Exclusion** | Ignora competidores especificos por nickname |
-| **Metodos de Pago** | Solo considera traders con tus mismos metodos de pago |
-| **Volumen** | Descarta competidores con volumen menor al umbral |
-| **Universo de Precios** | Limita la competencia a un rango de precios definido |
-| **Limites de Orden** | Solo compara con traders que aceptan ordenes en tu rango |
+**Mantener el precio también es una decisión.** HOLD es un resultado del motor; no es una cuarta estrategia. Los límites, el tick y la banda mínima de cambio ayudan a definir cuándo corresponde actualizar.
 
-Resultado: competis contra traders reales y relevantes, no contra ruido.
+[Explorar las estrategias de AutoP2P](https://autop2p.dev/estrategias/)
 
----
+## Un dashboard para la operación P2P
 
-## Dashboard en Tiempo Real
+- **Anuncios:** configuración individual y seguimiento del motor.
+- **Órdenes y chat:** contexto de la operación y conversación con la contraparte.
+- **Decisiones:** motivos de actualización o mantenimiento del precio.
+- **Horarios:** ventanas de operación configurables.
 
-El panel de control muestra todo lo que pasa con tus anuncios:
+[Ver el producto](https://autop2p.dev/producto/) · [Conocer el flujo para operadores P2P](https://autop2p.dev/para-operadores-p2p/)
 
-- **Control multi-anuncio** — Gestiona todos tus anuncios BUY y SELL desde un solo lugar
-- **Precios en vivo via WebSocket** — Cada cambio de precio se refleja en menos de 50ms
-- **Metricas por ventana de 60s** — Iteraciones, updates, skips, errores, tasa de exito
-- **Pipeline de ordenes** — Funnel visual de estados: Pendiente → En proceso → Pagado → Liberando → Completado
-- **Alertas de chat SLA** — Identifica ordenes con mensajes sin responder
-- **Historial de decisiones** — Cada decision del motor queda registrada con su razon
-- **Perfil de comerciante** — Metricas historicas, rendimiento 30 dias, tendencias, actividad
+## Seguridad y control
 
-### Gestion de Ordenes
+AutoP2P no custodia tus fondos. Configurá la API sin permisos de retiro y revisá sus permisos en Binance. El motor permanece apagado hasta que lo iniciás; la estrategia y los límites los definís vos.
 
-- Visualizacion de ordenes activas con detalle completo
-- Chat integrado con notificaciones
-- Exportacion a CSV/PDF con enriquecimiento paralelo
-- Cancelacion de exports en progreso desde el dashboard
+La ausencia de custodia no elimina los riesgos de operar P2P. AutoP2P no promete beneficios, volumen de órdenes ni una posición permanente en el libro.
 
----
+[Leer sobre seguridad y control](https://autop2p.dev/seguridad-y-control/)
 
-## Configuracion Avanzada
+## Preguntas frecuentes
 
-### Por Competidor
+### ¿Necesito un VPS o dejar la computadora encendida?
 
-Configura reglas diferentes para cada competidor:
+No necesitás administrar un servidor propio. AutoP2P se utiliza desde el navegador y el servicio corre en la nube.
 
-```
-trader_pro    →  Igualar precio (MATCH), aceptar empates
-competitor_b  →  Superar por 2 ticks (BEAT)
-bot_spam      →  Excluir del analisis
-```
+### ¿Puedo descargar el bot desde este repositorio?
 
-### Reglas Condicionales
+Este repositorio contiene material público del producto. El servicio se utiliza desde [la aplicación de AutoP2P](https://app.autop2p.dev/login); no hay un script para instalar ni código del motor publicado aquí.
 
-Define comportamiento dinamico segun condiciones del mercado:
+### ¿Es un bot para trading spot o futuros?
 
-```
-Si trader_pro esta en posicion #1  →  HOLD (no competir)
-Si precio esta en rango X-Y        →  BEAT con offset 1
-```
+AutoP2P está orientado a la operación de anuncios Binance P2P / C2C. No se presenta como un bot de señales para spot o futuros.
 
-### Anti-Ratchet
+### ¿El bot garantiza el primer puesto o rentabilidad?
 
-Previene guerras de precios innecesarias. Si un competidor sube su precio hacia el tuyo y vos ya estas ganando, el bot mantiene tu posicion en lugar de seguir ajustando.
+No. El resultado depende del mercado, los filtros, tus límites, los permisos y la disponibilidad de Binance. Una estrategia puede decidir mantener el precio en lugar de perseguir una posición.
 
-### Scheduler de Horarios
+### ¿Cuánto cuesta y cómo puedo acceder?
 
-Programa cuando queres que el bot opere:
+Consultá los [planes y condiciones vigentes](https://autop2p.dev/precios/). La duración de pruebas, el acceso y la disponibilidad de funciones se comunican en el sitio oficial.
 
-- Activa el motor en horarios de mayor demanda
-- Pausa automatica fuera de horario
-- Multiples ventanas horarias por dia
+### ¿AutoP2P pertenece a Binance?
 
----
+No. AutoP2P es un producto independiente y no está afiliado a Binance. Binance es una marca de su respectivo titular.
 
-## Motor de Competencia
+## Guías para automatizar Binance P2P
 
-El `CompetitionEngine` de AutoP2P ejecuta un ciclo de 9 fases por iteracion:
+Elegí un recorrido según lo que necesitás resolver. Las guías amplían los conceptos; las páginas de funciones explican cómo se aplican al producto.
 
-| Fase | Operacion |
-|------|-----------|
-| Preflight | Verifica estado del anuncio, pausa, y backoff |
-| Fetch Paralelo | Obtiene datos del mercado y precio actual simultaneamente |
-| Parsing | Parsea el order book a estructura normalizada |
-| Config | Carga estrategia y aplica tasa USD si corresponde |
-| Paginacion | En modo FOLLOW, busca targets en paginas adicionales |
-| Estrategia | Ejecuta el pipeline de 12 fases y obtiene precio objetivo |
-| Logging | Registra decision y emite eventos en tiempo real |
-| Ejecucion | Revalida rango, ejecuta update en Binance |
-| Metricas | Actualiza contadores y emite heartbeat |
+### Empezar y configurar
 
-### Protecciones Integradas
+| Tu pregunta | Recurso |
+| --- | --- |
+| ¿Qué hace un bot de precios P2P? | [Cómo funciona un bot P2P para Binance](https://autop2p.dev/blog/como-funciona-bot-p2p-binance/) |
+| ¿Cómo preparo mi configuración? | [Guía para configurar un bot P2P](https://autop2p.dev/blog/como-configurar-bot-p2p/) |
+| ¿Qué puedo automatizar? | [Automatización de Binance P2P](https://autop2p.dev/automatizar-binance-p2p/) |
+| ¿Qué debo revisar antes de conectar una API? | [Seguridad al usar un bot P2P](https://autop2p.dev/blog/es-seguro-usar-bot-p2p-binance/) |
+| ¿Qué significan los términos del motor? | [Glosario P2P: estrategias, libro y repricing](https://autop2p.dev/glosario/) |
+| ¿Dónde encuentro instrucciones de uso? | [Documentación de AutoP2P](https://autop2p.dev/docs/) |
 
-- **Watchdog** — Detecta motores estancados y los reinicia automaticamente
-- **Fast-Refresh** — Cuando el mercado se mueve, el motor acelera a 2s por ciclo
-- **Circuit Breaker** — Si Binance devuelve errores, el motor entra en cooldown progresivo
-- **Rate Limiting de 3 capas** — PerAdLimiter → GlobalRateLimiter → Retry con exponential backoff
-- **Recovery automatico** — Si Binance marca tu anuncio como offline, el motor detecta cuando vuelve y se reactiva
+### Profundizar en las funciones
 
----
+- [Repricing automático](https://autop2p.dev/features/repricing-automatico/): ajustes de precio según la configuración del anuncio.
+- [Filtros del order book](https://autop2p.dev/features/filtros-order-book/): criterios para seleccionar las referencias del mercado.
+- [Estrategia unificada](https://autop2p.dev/features/estrategia-unificada/): configuración de las rutas de competencia.
+- [Gestión multi-anuncio](https://autop2p.dev/features/multi-anuncio/): organización de varios anuncios desde el dashboard.
+- [Horarios del motor](https://autop2p.dev/features/scheduler/): ventanas de operación configurables.
+- [Chats integrados](https://autop2p.dev/features/chats-integrados/): conversaciones con las contrapartes en el flujo de órdenes.
+- [Métricas de operación](https://autop2p.dev/features/metricas/): seguimiento de la actividad del motor.
+- [Seguridad de la API](https://autop2p.dev/features/seguridad-api/): permisos y manejo de credenciales.
 
-## Seguridad
+### Comparar opciones antes de elegir
 
-| Capa | Implementacion |
-|------|----------------|
-| **Autenticacion** | PIN con lockout escalado (30min → 1h → 2h → 4h → 24h) |
-| **Sesiones** | Token HMAC-SHA256 con expiracion configurable |
-| **Encriptacion** | API keys almacenadas con Fernet (AES-128-CBC) |
-| **Permisos Binance** | Solo lectura y trading P2P — sin acceso a retiros |
-| **Logs** | Campos sensibles sanitizados automaticamente |
-| **Conexion** | HTTPS con certificados SSL via Let's Encrypt |
-| **Fondos** | Siempre en tu cuenta de Binance, nunca en servidores externos |
+Si estás evaluando herramientas, empezá por la [guía de bots P2P para Binance](https://autop2p.dev/bot-p2p-binance/) y el [centro de comparativas](https://autop2p.dev/comparativa/). También podés consultar la operación [sin VPS propio](https://autop2p.dev/bot-p2p-sin-vps/) o las diferencias entre un [dashboard web y un bot de Telegram](https://autop2p.dev/bot-p2p-telegram/).
 
----
+Para seguir la evolución del servicio: [blog de AutoP2P](https://autop2p.dev/blog/) y [novedades del producto](https://autop2p.dev/changelog/).
 
-## Stack Tecnico
+## AutoP2P por mercado e idioma
 
-| Capa | Tecnologias |
-|------|-------------|
-| **Backend** | Python 3.11+, FastAPI, SQLAlchemy 2.0 async, asyncio |
-| **Frontend** | React 19, Vite, Tailwind CSS (82 componentes, 14 hooks) |
-| **Base de Datos** | PostgreSQL con asyncpg |
-| **Cache** | Redis |
-| **Tiempo Real** | WebSocket + SSE con broker pub/sub |
-| **Infraestructura** | Docker, nginx, Let's Encrypt |
+### Recursos para Latinoamérica
 
-**131 endpoints API** &middot; **29 servicios backend** &middot; **16 routers** &middot; **12 fases de pipeline** &middot; **5 filtros de order book**
+| Mercado | Guía local |
+| --- | --- |
+| Argentina | [Bot P2P para Binance en Argentina](https://autop2p.dev/bot-p2p-argentina/) |
+| Colombia | [Bot P2P para Binance en Colombia](https://autop2p.dev/bot-p2p-colombia/) |
+| Venezuela | [Bot P2P para Binance en Venezuela](https://autop2p.dev/bot-p2p-venezuela/) |
+| Brasil | [Bot P2P para Binance no Brasil](https://autop2p.dev/pt/bot-p2p-brasil/) |
 
----
+La disponibilidad de pares y medios de pago depende de tu cuenta y del mercado en Binance. Estas páginas ofrecen contexto local; no implican disponibilidad universal del servicio.
 
-## Para Quien es AutoP2P
+### Explore AutoP2P in your language
 
-AutoP2P esta pensado para **traders P2P profesionales** que:
+El sitio ofrece recorridos en cinco idiomas, con páginas de producto y estrategias localizadas:
 
-- Gestionan **multiples anuncios** BUY y SELL simultaneamente
-- Realizan **5 o mas transacciones diarias**
-- Necesitan mantener posicion competitiva **las 24 horas**
-- Quieren **dejar de perder ordenes** por no estar mirando la pantalla
-- Operan en **cualquier par** soportado por Binance P2P (USDT/ARS, USDT/UYU, USDT/BRL, y mas)
+| Idioma / Language | Sitio / Website | Producto / Product | Estrategias / Strategies |
+| --- | --- | --- | --- |
+| Español | [AutoP2P en español](https://autop2p.dev/) | [Producto](https://autop2p.dev/producto/) | [Estrategias](https://autop2p.dev/estrategias/) |
+| English | [Binance P2P automation](https://autop2p.dev/en/) | [Product](https://autop2p.dev/en/producto/) | [Strategies](https://autop2p.dev/en/estrategias/) |
+| Português | [Automação P2P Binance](https://autop2p.dev/pt/) | [Produto](https://autop2p.dev/pt/producto/) | [Estratégias](https://autop2p.dev/pt/estrategias/) |
+| Русский | [Автоматизация Binance P2P](https://autop2p.dev/ru/) | [Продукт](https://autop2p.dev/ru/producto/) | [Стратегии](https://autop2p.dev/ru/estrategias/) |
+| 中文 | [Binance P2P 自动化](https://autop2p.dev/zh/) | [产品](https://autop2p.dev/zh/producto/) | [策略](https://autop2p.dev/zh/estrategias/) |
 
----
+## Conocé AutoP2P
 
-## Requisitos
+**[Explorar el producto y las opciones de acceso →](https://autop2p.dev/?utm_source=github&utm_medium=repository&utm_campaign=binance-p2p-bot&utm_content=readme_footer)**
 
-- Cuenta activa de Binance con operaciones P2P
-- API key con permisos de lectura y trading P2P (sin permisos de retiro)
-- Navegador web moderno
+[WhatsApp](https://wa.me/59893349147) · [hello@autop2p.dev](mailto:hello@autop2p.dev) · [Estado del servicio](https://status.autop2p.dev)
 
-No necesitas VPS, servidor propio, ni conocimientos tecnicos avanzados.
-
----
-
-## Proximamente: AutoP2P v2
-
-Estamos construyendo **AutoP2P v2**, la proxima generacion del bot P2P para Binance: mas control, mas transparencia en cada decision de precio, y soporte para operaciones de mayor escala. Actualmente en beta privada con un grupo reducido de traders.
-
-¿Queres enterarte cuando abra? Escribinos por [WhatsApp](https://wa.me/59893349147) y te avisamos.
-
----
-
-## Empezar Gratis
-
-AutoP2P ofrece **7 dias de prueba gratuita** sin compromiso y sin tarjeta de credito.
-
-### [Crear cuenta gratis →](https://autop2p.dev)
-
-Si no te convence, cancelas desde el dashboard sin cargos.
-
----
-
-## Preguntas Frecuentes
-
-<details>
-<summary><strong>¿AutoP2P ejecuta trades por mi?</strong></summary>
-No. AutoP2P solo gestiona el precio de tus anuncios P2P. Vos definis los limites y la estrategia, y el bot ajusta los precios automaticamente dentro de esos parametros. Las ordenes las seguis manejando vos.
-</details>
-
-<details>
-<summary><strong>¿Mis fondos estan seguros?</strong></summary>
-Si. Tus fondos nunca salen de Binance. La API key que proporcionas no tiene permisos de retiro. Las keys se almacenan encriptadas con AES-128-CBC y nunca se exponen en logs.
-</details>
-
-<details>
-<summary><strong>¿Que tan rapido reacciona el bot?</strong></summary>
-El motor ejecuta ciclos continuos con respuesta sub-segundo. Cuando detecta cambios en el mercado, activa modo fast-refresh que baja el intervalo a 2 segundos por ciclo.
-</details>
-
-<details>
-<summary><strong>¿Es un producto oficial de Binance?</strong></summary>
-No. AutoP2P es un servicio independiente que utiliza la API publica de Binance C2C.
-</details>
-
-<details>
-<summary><strong>¿Que pasa si Binance marca mi anuncio como offline?</strong></summary>
-El motor lo detecta automaticamente, entra en estado de espera, y se reactiva cuando el anuncio vuelve a estar online. No necesitas intervencion manual.
-</details>
-
-<details>
-<summary><strong>¿Puedo cancelar en cualquier momento?</strong></summary>
-Si. Cancela desde tu dashboard sin penalidades. Durante el trial no se realiza ningun cobro.
-</details>
-
-<details>
-<summary><strong>¿Necesito un VPS o dejar la computadora prendida?</strong></summary>
-No. AutoP2P corre en la nube. Solo necesitas un navegador para configurar y monitorear.
-</details>
-
----
-
-## AutoP2P en tu pais
-
-Bot P2P para Binance disponible en toda Latinoamerica:
-
-[Argentina](https://autop2p.dev/ar/) · [Uruguay](https://autop2p.dev/uy/) · [Colombia](https://autop2p.dev/co/) · [Chile](https://autop2p.dev/cl/) · [Mexico](https://autop2p.dev/mx/) · [Peru](https://autop2p.dev/pe/) · [Venezuela](https://autop2p.dev/ve/) · [Costa Rica](https://autop2p.dev/cr/) · [Ecuador](https://autop2p.dev/ec/) · [Republica Dominicana](https://autop2p.dev/do/) · [Bolivia](https://autop2p.dev/bo/) · [Paraguay](https://autop2p.dev/py/) · [Panama](https://autop2p.dev/pa/) · [English](https://autop2p.dev/en/)
-
----
-
-## Contacto y Soporte
-
-- **Web** — [autop2p.dev](https://autop2p.dev)
-- **WhatsApp** — [+598 93 349 147](https://wa.me/59893349147)
-- **Documentacion** — [autop2p.dev/docs](https://autop2p.dev/docs)
-
----
-
-<sub>
-
-**Tags:** `binance p2p bot` `p2p trading bot` `binance c2c bot` `bot trading p2p` `automated p2p trading` `binance p2p automation` `bot de precios binance` `p2p repricing bot` `cryptocurrency p2p bot` `trading automatico binance` `bot binance p2p español` `autop2p` `auto p2p` `autop2p v2` `bot p2p argentina` `bot p2p uruguay` `bot p2p brasil` `bot p2p colombia` `bot p2p mexico` `bot p2p peru` `bot p2p bolivia` `bot p2p chile` `bot p2p venezuela` `binance p2p price bot` `bot para binance p2p` `automatizar binance p2p` `binance p2p automatico` `p2p crypto bot` `binance trading bot` `bot de trading p2p latinoamerica` `binance peer to peer bot` `p2p bot binance español` `binance p2p repricing` `binance p2p ars` `binance p2p cop` `binance p2p pen` `binance p2p bob`
-
-</sub>
+La portada es una ilustración conceptual de marca, no una captura del dashboard. [Recursos y criterios editoriales](docs/marketing.md).
